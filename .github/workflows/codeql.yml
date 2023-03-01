@@ -39,6 +39,7 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
+      
     - name: Initialize CodeQL
       uses: github/codeql-action/init@v2
 
@@ -50,6 +51,7 @@ jobs:
         # queries: security-extended,security-and-quality
         
        - name: setup java
+       
          uses: action/setup java-setup@1
          with:
              dotnet-version: '1.8.0_362'
